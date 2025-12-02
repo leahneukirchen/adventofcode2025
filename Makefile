@@ -1,4 +1,4 @@
-SWIFTFLAGS = -O
+SWIFTFLAGS = -O -whole-module-optimization -g
 
 all: $(patsubst %.swift,%.exe,$(wildcard day*.swift))
 
